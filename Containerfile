@@ -60,3 +60,5 @@ WORKDIR /usr/local/share/games/minetest/mods
 RUN git clone https://github.com/miney-py/mineysocket.git
 
 RUN echo "secure.trusted_mods = mineysocket" >> /etc/minetest.conf
+
+COPY MinetestPortable.desktop /usr/local/share/applications
